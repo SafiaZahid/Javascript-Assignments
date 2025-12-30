@@ -1,0 +1,1 @@
+alert("Hey there! 😊 Welcome aboard.\nLet’s explore something amazing together!")
