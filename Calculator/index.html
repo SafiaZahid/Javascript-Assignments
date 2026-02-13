@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="calculator">
+    <input type="text" id="display" readonly>
+    <div id="keys">
+      <button type="button" class="btn btn-outline-light operator-btn" onclick="setOperator('+')">+</button>
+      <button type="button" class="btn btn-outline-light " onclick="appendToDisplay('7')">7</button>
+      <button type="button" class="btn btn-outline-light" onclick="appendToDisplay('8')">8</button>
+      <button type="button" class="btn btn-outline-light" onclick="appendToDisplay('9')">9</button>
+      <button type="button" class="btn btn-outline-light operator-btn" onclick="setOperator('-')">-</button>
+      <button type="button" class="btn btn-outline-light" onclick="appendToDisplay('4')">4</button>
+      <button type="button" class="btn btn-outline-light" onclick="appendToDisplay('5')">5</button>
+      <button type="button" class="btn btn-outline-light" onclick="appendToDisplay('6')">6</button>
+      <button type="button" class="btn btn-outline-light operator-btn " onclick="setOperator('*')">*</button>
+      <button type="button" class="btn btn-outline-light" onclick="appendToDisplay('1')">1</button>
+      <button type="button" class="btn btn-outline-light" onclick="appendToDisplay('2')">2</button>
+      <button type="button" class="btn btn-outline-light" onclick="appendToDisplay('3')">3</button>
+      <button type="button" class="btn btn-outline-light operator-btn" onclick="setOperator('/')">/</button>
+      <button type="button" class="btn btn-outline-light " onclick="appendToDisplay('.')">.</button>
+      <button type="button" class="btn btn-outline-light equation" onclick="calculate()">=</button>
+      <button type="button" class="btn btn-outline-light operator-btn"onclick="clearDisplay()">AC</button>
+    </div>
+  </div>
+
+    
+  </div>
+</div>
+
+
+
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>
