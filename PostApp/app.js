@@ -1,16 +1,17 @@
-function addPost(){
-    var title = document.getElementById("title");
-    var description = document.getElementById("description")
-    console.log(title.value, description.value);
+var backgroundImg = ""
+function addPost() {
+  var title = document.getElementById("title");
+  var description = document.getElementById("description");
+  console.log(title.value, description.value);
 
-    if (title.value.trim() && description.value.trim()) {
+  if (title.value.trim() && description.value.trim()) {
     var posts = document.getElementById("post-container");
     posts.innerHTML += `
     <div class="card mb-3">
                     <div class="card-header">
                         @Post
                     </div>
-                    <div class="card-body">
+                    <div style ="background-image:url(${backgroundImg}) "  class="card-body">
                         <figure>
                             <blockquote class="blockquote mb-0">
                                 <p>${title.value}</p>
@@ -21,15 +22,25 @@ function addPost(){
                             </blockquote>
                         </figure>
                     </div>
-                </div>`
-                title.value = "";
-                description.value = "";
-    } else{
-     Swal.fire({
-  icon: "error",
-  title: "Oops...",
-  text: "Enter your title & description!",
-  
-});
+                </div>`;
+    title.value = "";
+    description.value = "";
+  } else {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Enter your title & description!",
+    });
+  }
 }
-}             
+
+function selectedImg(src) {
+ backgroundImg = src;
+  var bgImg = document.getElementsByClassName("bg-image");
+  console.log(bgImg);
+for (var i = 0; i < bgImg.length; i++) {
+    bgImg[i].className = "bg-image";
+}
+
+  event.target.className += " selected-img";
+}

@@ -29,6 +29,30 @@
     background-color: #801F4F !important;
     border-color: #801F4F !important;
 }
+.card-header{
+    background-color: #801F4F !important;
+    color: white !important;
+}
+.images-list > img{
+width: 40px;
+height: 40px;
+border-radius: 5px;
+
+}
+.images-list{
+    justify-content: space-around;
+}
+
+.selected-img{
+    border: 5px solid #801F4F;
+    
+}
+.card-body{
+    
+    
+  
+    background-size: cover;
+}
 @media only screen and (max-width: 500px) {
     .main{
         padding: 10px 4px !important;
